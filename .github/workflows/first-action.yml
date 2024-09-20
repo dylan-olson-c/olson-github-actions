@@ -1,0 +1,12 @@
+name: First Workflow
+
+on: workflow_dispatch     # Waits until the workflow is manually triggered.
+
+jobs:
+  first-job:              # This is the job name.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Stuff
+        run: echo "Test!"
